@@ -61,7 +61,7 @@ void Rectangle:: setBreadth(int b){
     breadth = b;
     else
     {
-    cout<<"bradth can't be negative\nit is taken as 1"<<endl;
+    cout<<"breadth can't be negative\nit is taken as 1"<<endl;
     breadth = 1;
         
     }
