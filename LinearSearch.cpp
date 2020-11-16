@@ -18,7 +18,7 @@ void LinearSearch(int *a,int n,int num){
         
     }
     if(temp==-1){
-        cout<<"number not found: "<<endl;
+        cout<<"number not found ! "<<endl;
     }
 
 }
