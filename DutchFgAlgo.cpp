@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-void sort(int a[], int n)
+void sortarr(int a[], int n)
 {
     int l=0,m=0,h=n-1;
     while(m<=h){
@@ -24,7 +24,7 @@ void sort(int a[], int n)
 int main(){
 int a[]={1,2,0,0,1,0,1,1,2};
 int s=sizeof(a)/sizeof(a[0]);
-sort(a,s);
+sortarr(a,s);
 for(int i=0;i<s;i++){
    cout<<a[i]<<" ";
 }
