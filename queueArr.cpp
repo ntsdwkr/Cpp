@@ -3,7 +3,7 @@
 #include <iostream>
 using namespace std;
 
-template<typename T>
+template <typename T>
 class queue
 {
 	int firstI, nextI, s, cap;
@@ -25,6 +25,15 @@ public:
 	bool isEmpty()
 	{
 		return (s == 0);
+	}
+	T front()
+	{
+		if (isEmpty())
+		{
+			cout << "Empty queue! " << endl;
+			return -1;
+		}
+		return arr[firstI];
 	}
 	void enqueue(T n)
 	{
@@ -67,6 +76,8 @@ public:
 		if (s == 0)
 		{
 			cout << "Empty queue! " << endl;
+			firstI = -1;
+			nextI = 0;
 			return -1;
 		}
 		T ans = arr[firstI];
@@ -84,6 +95,11 @@ int main()
 	n.enqueue(20);
 	n.enqueue(30);
 	cout << n.size() << endl;
+	cout << n.front() << endl;
+	cout << n.dequeue() << endl;
+	cout << n.dequeue() << endl;
+	cout << n.dequeue() << endl;
+	cout << n.dequeue() << endl;
 	cout << n.dequeue() << endl;
 	cout << n.size() << endl;
 	n.enqueue(40);
@@ -95,6 +111,7 @@ int main()
 	n.enqueue(80);
 	n.enqueue(90);
 	cout << n.size() << endl;
+	cout << n.front() << endl;
 	cout << n.dequeue() << endl;
 	cout << n.isEmpty() << endl;
 
