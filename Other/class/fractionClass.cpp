@@ -19,7 +19,7 @@ class fraction{
         return gcd(b, a % b);
         else
         return a; 
-    }
+        }
 	void display(){
 		int g = gcd(n, d);
 		int a = n / g;
