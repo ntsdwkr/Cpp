@@ -3,7 +3,7 @@
 using namespace std;
 
 class fraction{
-    int n;
+        int n;
 	int d;
 	public:
     fraction(int a, int b){
