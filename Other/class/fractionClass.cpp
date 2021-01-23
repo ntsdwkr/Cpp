@@ -61,7 +61,7 @@ class fraction{
 };
 
 int main(){
-	fraction f1(3.5, 4.4);
+	fraction f1(3, 4);
 	fraction f2(5, 2);
 	fraction f3 = f3.add(f1, f2);
 	fraction f4 = f4.add(f1, f3);
