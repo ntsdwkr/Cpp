@@ -5,8 +5,7 @@ using namespace std;
 bool check(int a[],int s){
     if(s==1||s==0) return true;
     if(a[0]>a[1]) return false;
-    bool n = check(a+1,s-1);
-    return n;
+    check(a+1,s-1);
 }
 
 int main() {
