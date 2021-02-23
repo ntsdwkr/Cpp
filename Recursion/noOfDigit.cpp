@@ -19,8 +19,6 @@ int main() {
 	return 0;
 } */
 
-// no of digit using recursion
-
 int num(int n, int c){
     int d=n/10;
     c++;
