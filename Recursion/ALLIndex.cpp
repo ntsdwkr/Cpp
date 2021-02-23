@@ -1,4 +1,4 @@
-// last index
+// All index
 #include <iostream>
 using namespace std;
 
