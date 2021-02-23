@@ -11,7 +11,7 @@ int check(int a[], int s, int n){
 int main() {
 	int a[]={0,1,2,10,3,4,10,2,11};
 	int s = sizeof(a)/sizeof(a[0]);
-	num = 2;
+	int num = 2;
 	cout<<check(a,s,num);
 	return 0;
 }
