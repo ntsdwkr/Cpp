@@ -22,9 +22,7 @@ int main() {
 int num(int n, int c){
     int d=n/10;
     c++;
-    if(d==0){
-        return c;
-    }
+    if(d==0) return c;
     num(d,c);
 }
 
