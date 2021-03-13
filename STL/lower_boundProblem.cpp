@@ -13,11 +13,11 @@ int main() {
     int money;
     cin>>money;
     while(money>0){
-    auto lb=lower_bound(c,c+n,money,cmp);
-    auto i =lb-c-1;
-    int m = c[i];
-    cout<<m<<" ";
-    money = money-m;
+    	auto lb=lower_bound(c,c+n,money,cmp);
+    	auto i =lb-c-1;
+    	int m = c[i];
+    	cout<<m<<" ";
+    	money = money-m;
     }
     
 	return 0;
