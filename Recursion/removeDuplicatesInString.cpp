@@ -27,9 +27,16 @@ int length(char c[]){
 char* duplicate(char s[]){
     if(s[0]=='\0') return s;
     if(s[0]==s[1]){
+        int i=0;
+        while(s[i]!='\0'){
+            s[i]=s[i+1];
+            i++;
+        }
+        /*
         for(int i=1;i<=length(s);i++){
             s[i-1]=s[i];
         }
+        */
         duplicate(s);
     }
     else duplicate(s+1);
